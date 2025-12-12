@@ -1,0 +1,3 @@
+João;Matemática,Física
+Maria;Português,História
+Carlos;Biologia,Química
