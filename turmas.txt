@@ -1,0 +1,2 @@
+1A;Matemática,Português,História
+2B;Física,Química,Biologia
