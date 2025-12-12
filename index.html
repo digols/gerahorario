@@ -8,6 +8,30 @@
 <body>
   <h1>Gerador de Horário Escolar</h1>
   
+  <section id="cadastro">
+    <h2>Cadastro</h2>
+    <form id="form-professor">
+      <h3>Professor</h3>
+      <input type="text" id="nomeProfessor" placeholder="Nome">
+      <input type="text" id="materiasProfessor" placeholder="Matérias (separadas por vírgula)">
+      <button type="button" onclick="cadastrarProfessor()">Cadastrar Professor</button>
+    </form>
+
+    <form id="form-materia">
+      <h3>Matéria</h3>
+      <input type="text" id="nomeMateria" placeholder="Nome da matéria">
+      <input type="number" id="aulasMateria" placeholder="Qtd de aulas semanais">
+      <button type="button" onclick="cadastrarMateria()">Cadastrar Matéria</button>
+    </form>
+
+    <form id="form-turma">
+      <h3>Turma</h3>
+      <input type="text" id="nomeTurma" placeholder="Nome da turma">
+      <input type="text" id="materiasTurma" placeholder="Matérias (separadas por vírgula)">
+      <button type="button" onclick="cadastrarTurma()">Cadastrar Turma</button>
+    </form>
+  </section>
+
   <div id="inputs">
     <button onclick="gerarHorario()">Gerar Horário</button>
     <button onclick="exportarExcel()">Exportar para Excel</button>
