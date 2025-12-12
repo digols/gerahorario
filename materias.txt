@@ -1,0 +1,6 @@
+Matemática;4
+Português;3
+História;2
+Física;3
+Química;2
+Biologia;2
