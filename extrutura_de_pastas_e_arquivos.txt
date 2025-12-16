@@ -3,10 +3,5 @@
     style.css
   /js
     app.js
-  /data
-    professores.txt
-    materias.txt
-    turmas.txt
-    horarios.txt
   index.html
   README.md
