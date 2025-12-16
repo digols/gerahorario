@@ -1,0 +1,39 @@
+<!-- escolas.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>School Scheduler — Escolas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/escolas.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Minhas escolas</h1>
+    <nav>
+      <button id="btnLogout" class="linklike">Sair</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Adicionar escola</h2>
+      <div class="row">
+        <input type="text" id="schoolName" placeholder="Nome da escola">
+        <input type="text" id="schoolCity" placeholder="Cidade (opcional)">
+        <button id="btnAddSchool">Adicionar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Lista de escolas</h2>
+      <div id="schoolsList" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Detalhes da escola selecionada</h2>
+      <div id="schoolDetails"></div>
+    </section>
+  </main>
+</body>
+</html>
