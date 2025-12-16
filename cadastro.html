@@ -1,0 +1,34 @@
+<!-- cadastro.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>School Scheduler — Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/auth.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>School Scheduler</h1>
+    <nav>
+      <a href="index.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Cadastro de administrador</h2>
+      <form id="signupForm">
+        <label for="signupEmail">Email</label>
+        <input type="email" id="signupEmail" required>
+
+        <label for="signupPassword">Senha</label>
+        <input type="password" id="signupPassword" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+      <p class="muted">Já tem conta? <a href="index.html">Entrar</a></p>
+    </section>
+  </main>
+</body>
+</html>
