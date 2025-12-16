@@ -2,6 +2,12 @@
   /css
     style.css
   /js
-    app.js
+    auth.js
+    escolas.js
+    horarios.js
   index.html
+  cadastro.html
+  escolas.html
+  horarios.html
   README.md
+  supabase_schema.sql
