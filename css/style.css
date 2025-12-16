@@ -1,34 +1,102 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  background: #f4f4f4;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 24px;
+  background: #f7f7fa;
+  color: #222;
 }
 
-h1 {
+h1 { margin-bottom: 16px; }
+.hidden { display: none; }
+
+section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+h2 { margin-top: 0; margin-bottom: 12px; }
+h3 { margin: 8px 0; }
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+label { width: 180px; font-weight: 600; }
+
+input, select, button {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  border: none;
+  background: #3a77f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover { background: #2b63d6; }
+
+.file-label {
+  display: inline-block;
+  background: #eee;
   color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
 }
+.file-label input { display: none; }
 
-form {
-  margin-bottom: 15px;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #ccc;
-}
-
-#resultado {
-  margin-top: 20px;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #ccc;
+.list {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  max-height: 240px;
+  overflow: auto;
+  background: #fafafa;
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 
-td, th {
-  border: 1px solid #999;
+th, td {
+  border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
+}
+th { background: #f1f4fb; font-weight: 700; }
+
+td.intervalo {
+  background: #f9f0d5;
+  color: #5a4c1f;
+  font-weight: 600;
+}
+td.conflito {
+  background: #ffe3e3;
+  color: #b00020;
+  font-weight: 700;
 }
