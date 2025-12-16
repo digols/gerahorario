@@ -1,0 +1,91 @@
+<!-- horarios.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>School Scheduler — Horários</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script type="module" src="js/horarios.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Horários da escola</h1>
+    <nav>
+      <a href="escolas.html">Voltar às escolas</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div id="schoolInfo"></div>
+    </section>
+
+    <section class="card">
+      <h2>Configuração da semana</h2>
+      <div class="row">
+        <label>Dias:</label>
+        <input type="text" id="daysInput" value="Segunda,Terça,Quarta,Quinta,Sexta">
+      </div>
+      <div class="row">
+        <label>Horários (vírgula):</label>
+        <input type="text" id="slotsInput" value="07:00-07:50,07:50-08:40,08:40-09:30,Intervalo,09:50-10:40,10:40-11:30">
+      </div>
+      <button id="applyWeek">Aplicar</button>
+    </section>
+
+    <section class="card">
+      <h2>Cadastros rápidos</h2>
+
+      <div class="grid-3">
+        <div>
+          <h3>Professor</h3>
+          <input id="profName" placeholder="Nome">
+          <input id="profEmail" placeholder="Email (opcional)">
+          <button id="addProf">Adicionar</button>
+        </div>
+
+        <div>
+          <h3>Matéria</h3>
+          <input id="matName" placeholder="Nome">
+          <button id="addMat">Adicionar</button>
+        </div>
+
+        <div>
+          <h3>Turma</h3>
+          <input id="className" placeholder="Turma (ex.: 1A)">
+          <input id="classYear" placeholder="Ano (ex.: 1)">
+          <button id="addClass">Adicionar</button>
+        </div>
+      </div>
+
+      <div>
+        <h3>Vínculo (turma, matéria, professor, aulas/semana)</h3>
+        <div class="row">
+          <select id="linkClass"></select>
+          <select id="linkMat"></select>
+          <select id="linkProf"></select>
+          <input id="linkWeekly" type="number" min="1" placeholder="Aulas/semana">
+          <button id="addLink">Vincular</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Geração e versões</h2>
+      <div class="row">
+        <button id="generate">Gerar horário (com blocos duplos)</button>
+        <button id="saveVersion">Salvar versão</button>
+        <button id="exportExcel">Exportar Excel</button>
+        <button id="exportSheets">Exportar CSV (Google Planilhas)</button>
+      </div>
+      <div id="versions"></div>
+    </section>
+
+    <section class="card">
+      <h2>Grade atual</h2>
+      <div id="gradeContainer"></div>
+    </section>
+  </main>
+</body>
+</html>
